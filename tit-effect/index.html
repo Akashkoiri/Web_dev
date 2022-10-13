@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tilt Effect</title>
+	<style type="text/css">
+		* {
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+		body {
+			min-height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.card {
+			width: 250px;
+			height: 400px;
+			background: linear-gradient(135deg, blue, red);
+			color: white;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+			transform-style: preserve-3d;
+		}
+		.card h1 {
+		    position: absolute;
+		    text-align: center;
+
+		    transform: translateZ(50px) translate(-50%, -50%);
+		    box-shadow: 0 0 50px 0 rgb(51 51 51 / 30%);
+		    background: linear-gradient(135deg, orange, blue);
+		}
+	</style>
+</head>
+<body>
+
+	<div class="card">
+			<h1>Akash koiri</h1>
+	</div>
+
+
+<script type="text/javascript" src="vanilla-tilt.js"></script>
+<script type="text/javascript">
+	VanillaTilt.init(document.querySelector(".card"), {
+		max: 25,
+		speed: 400,
+		scale: 1.1
+	});	
+</script>
+</body>
+</html>

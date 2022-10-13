@@ -1,0 +1,55 @@
+html, body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #1A1A1A;
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.index {
+  min-height:  100px;
+  text-align: center;
+  border: 1px solid greenyellow;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.nav {
+  display: flex;
+}
+.nav span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(255, 255, 255,0.2);
+  min-height: 30px;
+  min-width: 30px;
+  padding-bottom: 2px;
+  margin-right: 5px;
+}
+.nav span.total {
+  min-width: 40px;
+}
+.nav span.dot {
+  border: none;
+}
+.nav span.next_btn {
+  min-width: 60px;
+  flex-grow: 1;
+}
+
+/* #494949 #282828*/
+
+.first {
+  background-color: #c62d2d;
+}
+.nav a {
+  text-decoration: none;
+  color: white;
+}
+.gray:hover {
+  background-color: #282828;
+}

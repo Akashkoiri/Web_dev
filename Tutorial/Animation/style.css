@@ -1,0 +1,38 @@
+.parent {
+    position: relative;
+    background: #004466;
+    height: 400px;
+    width: 400px;
+}
+.child {
+    position: absolute;
+    background: red;
+    height: 50%;
+    width: 50%;
+    animation: mymove infinite;
+}
+
+.parent:hover .child {
+    
+}
+
+@keyframes mymove {
+  from {top: 0px;}
+  to {top: 200px;}
+}
+
+
+@keyframes anime {
+    0% {
+        transform: translateX(0) ;
+    }
+    33% {
+        transform: translateY(100%);
+    }
+    66% {
+        transform:  translateX(100%) translateY(100%);
+    }
+    100% {
+        transform:  translateX(100%);
+    }
+}

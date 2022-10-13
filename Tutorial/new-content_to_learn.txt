@@ -1,0 +1,5 @@
+[1] css attribute = white-space: nowrap;
+[2] transform : translate ✓
+[3] transition ✓
+[4] animation (@Keyframes)✓
+[5] <li style="--i:0;">
